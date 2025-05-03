@@ -10,3 +10,13 @@ function z() {
   return y();
 }
 z();
+
+function one() {
+  let a = 20;
+  function two() {
+    return a;
+  }
+  a = 10;
+  return two();
+}
+console.log(one());

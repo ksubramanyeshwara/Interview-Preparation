@@ -53,6 +53,10 @@ console.log(multiply(4, 5)); // Output: 20
 // console.log(times(4, 5)); // Throws an error: times is not defined (name is local to the function)
 ```
 
+**Why `times()` is not accessible outside the function?**
+- Named function expressions are not hoisted like function declarations.
+- They are only accessible inside the function.
+
 ### Arrow Function
 
 - not hoisted

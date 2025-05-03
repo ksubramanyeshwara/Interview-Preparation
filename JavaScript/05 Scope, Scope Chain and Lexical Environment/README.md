@@ -43,6 +43,7 @@ console.log(name); // ReferenceError: name is not defined
 
 #### Block Scope
 
+- Block is a group of statements that share the same scope.
 - Variables declared with `let` or `const` inside a block (e.g., {}, if, for) are in block scope.
 - They are only accessible within the block.
 

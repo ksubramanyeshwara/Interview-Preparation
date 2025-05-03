@@ -4,7 +4,7 @@ Closure is a function that has access to its parents lexical environment, even a
 
 In closure is a function can remember and access variable from an outer function's scope even after outer function has complted the execution.
 
-> Function + its parent's lexical environment's reference = Closure
+> Function scope + its parent's lexical environment's reference = Closure
 
 > Closure is always going to use the most up-to-date value.
 
