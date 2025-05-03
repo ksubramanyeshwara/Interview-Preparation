@@ -19,7 +19,7 @@ setTimeout(() => {
 }, 5000);
 console.log("End");
 
-Event Listeners
+// Event Listeners
 function clickMe() {
   let countClick = 0;
   const button = document.getElementById("button");
