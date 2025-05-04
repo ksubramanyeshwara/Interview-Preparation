@@ -19,3 +19,7 @@ It also contains the resources I used to prepare for interviews.
 ⭐ [Closure](./JavaScript/06%20Closure/README.md)
 
 ⭐ [Callback Function and Event Listeners](./JavaScript/07%20Callback%20Function%20and%20Event%20Listeners/README.md)
+
+⭐ [Asynchronous JS and Event Loop](./JavaScript/08%20Asynchronous%20JS%20and%20Evenet%20loop/README.md)
+
+⭐ [Higher Order Functions](./JavaScript/09%20Higher%20Order%20Function/README.md)
