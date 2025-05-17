@@ -23,3 +23,5 @@ It also contains the resources I used to prepare for interviews.
 ⭐ [Asynchronous JS and Event Loop](./JavaScript/08%20Asynchronous%20JS%20and%20Evenet%20loop/README.md)
 
 ⭐ [Higher Order Functions](./JavaScript/09%20Higher%20Order%20Function/README.md)
+
+⭐ [Promise](./JavaScript/10%20Promise/README.md)
