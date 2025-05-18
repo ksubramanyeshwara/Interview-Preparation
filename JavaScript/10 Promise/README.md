@@ -96,8 +96,36 @@ Executor ends (synchronous)
 Script end
 Promise fulfilled with: Operation successful!
 
-or 
+or
 
 Promise rejected with: Operation failed!
-*/ 
+*/
 ```
+
+## Promise Chaining
+
+Promise chaining allows you to execute asynchronous operations in a synchronous order, where each operation starts after the previous one completes. This is achieved by returning a Promise from within the `.then()` handler.
+
+## Promise API
+
+API calls are made parallelly.
+
+- `Promise.all([p1, p2, p3, ...])`
+  - Resolves only if all promises resolve, returns an array of resolved values in the same order.
+  - Rejects immediately if any promise rejects, returns the reason of the first rejection. Subsequent promises are ignored.
+- `promise.allSettled()`
+  - Resolves when all Promises settle (success or failure)
+  - Returns an array of objects describing the outcome of each promise.
+- `Promise.race([p1, p2, p3, ...])`
+  - Returns the first settled promise (either fulfilled or rejected).
+  - Returns the value or reson of the first settled promise.
+- `Promise.any([p1, p2, p3, ...])`
+  - Returns the first fulfilled promise and returns its value.
+  - If all promises are rejected, it throws an `AggregateError`.
+
+# Async/Await
+
+It is a syntactic sugar for Promise. It allows you to write asynchronous code in a synchronous manner, making it easier to read and maintain.
+
+- `Async` : It declares a function as asynchronous. It always returns a Promise. Even if the function returns a value, it wraps it in a Promise and returns a Promise.
+- `Await` : It waits for a Promise to settle and returns its value. It can be used only inside an `async` function.

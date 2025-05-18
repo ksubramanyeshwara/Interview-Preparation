@@ -25,11 +25,15 @@ dataFetch
 const userProfile = fetch("https://api.github.com/users/ksubramanyeshwara");
 console.log(userProfile);
 
+// Promise chain
 userProfile
   .then((response) => {
-    const data = response.json();
+    return (data = response.json());
+  })
+  .then((data) => {
+    console.log(`User Name is : ${data.name}`);
     return data;
   })
   .then((data) => {
-    console.log(data);
+    console.log(`Public Repos numbers : ${data.public_repos}`);
   });
