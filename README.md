@@ -25,3 +25,9 @@ It also contains the resources I used to prepare for interviews.
 ⭐ [Higher Order Functions](./JavaScript/09%20Higher%20Order%20Function/README.md)
 
 ⭐ [Promise](./JavaScript/10%20Promise/README.md)
+
+⭐ [Prototype, Prototype Chain and Prototypal Inheritance](./JavaScript/11%20Prototype%20Prototype%20Chain%20and%20Prototype%20Inheritance/README.md)
+
+⭐ [this, call, apply, bind](./JavaScript/11%20this%20call%20apply%20bind/README.md)
+
+⭐ [Destructuring, spread, rest](./JavaScript/12%20Destructuring,%20spread,%20rest/README.md)
