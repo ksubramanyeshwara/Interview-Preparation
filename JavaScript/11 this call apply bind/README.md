@@ -1,5 +1,7 @@
 # this, call, apply, bind
 
+# this
+
 `this` refers to the **context** in which a function is executed. The value of `this` depends on how the function is called not where the function is defined.
 
 ## `this` in global context(Outside of any function)
@@ -130,3 +132,52 @@ const myObject = {
 };
 myObject.myMethod();
 ```
+
+## `this` in Event Handlers
+
+In DOM event handlers, this typically refers to the element on which the event listener was attached.
+
+```JS
+const button = document.getElementById("myButton");
+button.addEventListener("click", function() {
+  console.log(this);  // button element
+});
+```
+
+# call apply bind
+
+call, apply, and bind are methods available to all function in JavaScript. They allow you to control the `this` context of a function and control how arguments are passed to the function.
+
+## call()
+
+Calls the function immediately with a given `this` context and individual arguments.
+
+```JS
+functionName.call(this, arg1, arg2, ...)
+```
+
+- `this`: The context in which the function is executed.
+- `arg1, arg2, ...`: Arguments passed individually.
+
+## apply()
+
+Calls the function immediately with the given `this` context and argument as an array
+
+```JS
+functionName.apply(this, [])
+```
+
+- `this`: The context in which the function is executed.
+- `[]`: Arguments passed as an array.
+
+## bind()
+
+Creates a new function with a specified `this` context and arguments. The new function will not be executed immediately.
+
+```JS
+const boundFunction = funcationName.bind(this, arg1, arg2, ...);
+```
+
+- `this`: The context in which the function is executed.
+- `arg1, arg2, ...`: Arguments passed individually.
+- used to preserve context in callback functions(e.g., event handlers)
