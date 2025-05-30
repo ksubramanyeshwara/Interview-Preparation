@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #333;
+        color: #fff;
+      }
+
+      #grand-parent {
+        border: 1px solid #fff;
+        padding: 1em;
+      }
+
+      #parent {
+        border: 1px solid #fff;
+        padding: 1em;
+      }
+
+      #child {
+        padding: 0.3em 1.5em;
+      }
+
+      .products {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-gap: 10px;
+      }
+
+      span {
+        width: 75px;
+        height: 75px;
+        background-color: #e98888;
+        border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modalContainer {
+        display: none;
+        position: absolute;
+        top: 0;
+        background-color: #333;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-self: center;
+      }
+      .modal {
+        width: 500px;
+        height: 500px;
+        background-color: #978443;
+        border: 5px solid #fff;
+        padding: 20px;
+        box-shadow: 0 0 5px #c7c3c3;
+      }
+    </style>
+    <script src="./events.js" defer></script>
+  </head>
+  <body>
+    <div class="products">
+      <span class="mobile">Mobile</span>
+      <span class="tablet">Tablet</span>
+      <span class="laptop">Laptop</span>
+      <span class="desktop">Desktop</span>
+      <span class="tv">TV</span>
+      <span class="camera">Camera</span>
+      <span class="printer">Printer</span>
+      <span class="scanner">Scanner</span>
+      <span class="router">Router</span>
+    </div>
+
+    <div id="grand-parent">
+      <b id="parent">
+        <button id="child">Click</button>
+      </b>
+    </div>
+
+    <button class="modalBtn">Open Modal</button>
+
+    <div class="modalContainer">
+      <div class="modal">Model Content</div>
+    </div>
+  </body>
+</html>
