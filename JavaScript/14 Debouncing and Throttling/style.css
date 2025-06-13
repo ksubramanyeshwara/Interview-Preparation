@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #383838;
+  color: #fff;
+  font-family: monospace;
+  font-size: 1em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.increment_btn {
+  margin: 1em 0;
+  padding: 0.5em 2em;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #05a590;
+  color: #fff;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+}
+
+.container p {
+  margin: 1em 0;
+}
+
+.output{
+    margin-bottom: 1em;
+}
