@@ -31,3 +31,7 @@ It also contains the resources I used to prepare for interviews.
 ⭐ [this, call, apply, bind](./JavaScript/11%20this%20call%20apply%20bind/README.md)
 
 ⭐ [Destructuring, spread, rest](./JavaScript/12%20Destructuring,%20spread,%20rest/README.md)
+
+⭐ [Events](./JavaScript/13%20Events/README.md)
+
+⭐ [Debouncing and Throttling](./JavaScript/14%20Debouncing%20and%20Throttling/README.md)
